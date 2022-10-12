@@ -8,6 +8,7 @@ test('playing with assertions', async ({ page }) => {
   await expect(page.locator('#newButtonName')).toBeVisible();
   // select input and fill the input your text
   await page.locator('#newButtonName').fill('jude');
+  await page.pause();
   // click in button
   await page.locator('#updatingButton').click();
   // verify button text updated
